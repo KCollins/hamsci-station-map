@@ -582,7 +582,7 @@ $(window).on('load', function() {
         })
       });
 
-      if (!allTextLabels[polygon]) {allTextLabels.push([]);}
+      while (!allTextLabels[polygon]) {allTextLabels.push([]);}
       allTextLabels[polygon].push(myTextLabel);
     }
   }
